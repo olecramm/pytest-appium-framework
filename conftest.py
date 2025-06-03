@@ -1,5 +1,6 @@
 from fixtures.driver import appium_driver, device_config
 from fixtures.pages import home_page, product_view
+from fixtures.logs import logger
 
 def pytest_addoption(parser):
     parser.addoption("--device", 
