@@ -1,0 +1,77 @@
+# -------------------
+# Python
+# -------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.cache/
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# -------------------
+# Environments
+# -------------------
+.env
+.env.*
+.venv/
+venv/
+ENV/
+env/
+*.envrc
+
+# -------------------
+# Pytest
+# -------------------
+.pytest_cache/
+.cache/
+.nox/
+.tox/
+
+# -------------------
+# Editors / IDEs
+# -------------------
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# -------------------
+# Logs and reports
+# -------------------
+*.log
+*.out
+*.report
+test-results/
+
+# -------------------
+# OS files
+# -------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Linux
+*~
+
+# -------------------
+# Jupyter (if used)
+# -------------------
+.ipynb_checkpoints/
