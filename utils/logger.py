@@ -22,7 +22,7 @@ def setup_logger(name="test_logger"):
     ch.setFormatter(ch_formatter)
 
     # File handler
-    fh = logging.FileHandler(log_file, mode='w')
+    fh = logging.FileHandler(log_file, mode='a')
     fh.setLevel(logging.DEBUG)
     fh_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     fh.setFormatter(fh_formatter)

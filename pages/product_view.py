@@ -5,16 +5,12 @@ class ProductView(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
         
-    LOCATOR_TXT_PRODUCT_NAME = (By.ANDROID_UIAUTOMATOR, 'new UiSelector().text("SEIKO SRPB77 Automatic Watch for Men - Presage Cocktail Time - Patterned Silver Dial with Gloss Finish, Date Calendar, 50m Water-Resistant")')
+    LOCATOR_TXT_PRODUCT_NAME = (By.XPATH, "//android.view.View[contains(@text, 'SEIKO SRPB77')]")
         
     def is_opened(self):
-        """Check if the product view is opened by verifying the presence of the product name.
-        
-        Args:
-            model (str): The name of the product to check.
-        
+        """Check if the product view is opened by verifying if the product name is displayed.
         Returns:
-            bool: True if the product view is opened, False otherwise.
+            bool: True if the product name is displayed, otherwise False.
         """
         return self.check_element_displayed(*self.LOCATOR_TXT_PRODUCT_NAME)
     
