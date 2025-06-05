@@ -24,7 +24,7 @@ def setup_logger(name="test_logger"):
     # File handler
     fh = logging.FileHandler(log_file, mode='a')
     fh.setLevel(logging.DEBUG)
-    fh_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    fh_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
     fh.setFormatter(fh_formatter)
 
     logger.addHandler(ch)

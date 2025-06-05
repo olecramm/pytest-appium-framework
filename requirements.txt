@@ -1,3 +1,5 @@
+allure-pytest==2.14.2
+allure-python-commons==2.14.2
 Appium-Python-Client==5.1.1
 attrs==25.3.0
 certifi==2025.4.26
