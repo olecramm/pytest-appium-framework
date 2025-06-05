@@ -70,4 +70,31 @@ Copy `.env.example` to `.env.qa` and set your Appium server URL:
 APPIUM_SERVER_URL=http://0.0.0.0:4723
 ```
 
+## Allure Report Integration
+
+This project supports [Allure](https://docs.qameta.io/allure/) for advanced test reporting and visualization.
+
+### How to Generate and View Allure Reports
+
+1. **Run your tests to generate Allure results:**
+    ```bash
+    pytest
+    ```
+
+2. **Generate the Allure HTML report:**
+    ```bash
+    allure generate allure-results -o allure-report --clean
+    ```
+
+3. **Open the Allure report in your browser:**
+    ```bash
+    allure open allure-report
+    ```
+
+> **Note:**  
+> Make sure you have the [Allure commandline tool](https://docs.qameta.io/allure/#_installing_a_commandline) installed.  
+> You can install it via Homebrew (`brew install allure`), Scoop (`scoop install allure`), or download from the [official site](https://github.com/allure-framework/allure2/releases).
+
+The report will be available at [http://localhost:port](http://localhost:port) after running the `allure open` command.
+
 *Automate. Test. Deliver quality Android apps with confidence!*

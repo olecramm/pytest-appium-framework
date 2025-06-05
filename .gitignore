@@ -55,6 +55,9 @@ env/
 *.out
 *.report
 test-results/
+allure-results/
+allure-report/
+
 
 # -------------------
 # OS files
