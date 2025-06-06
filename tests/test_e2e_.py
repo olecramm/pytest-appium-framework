@@ -1,6 +1,6 @@
 import time
 import allure
-import pytest
+# import pytest
 
 @allure.feature("E2E Tests")
 @allure.story("Search Box Functionality")
@@ -41,7 +41,7 @@ def test_search_box_opens_product_view(home_page, product_view, logger):
 def test_product_name(product_view, logger):
     """Test the product name retrieval functionality."""
     # Arrange
-    expected_product_name = "Presagexxxx"
+    expected_product_name = "Presage"
     
     # Act
     logger.info(f"Step 5: Retrieving product name for '{expected_product_name}'.")
@@ -64,7 +64,7 @@ def test_product_name(product_view, logger):
 @allure.severity(allure.severity_level.MINOR)
 @allure.tag("e2e", "skip", "allure_skip_category")
 @allure.label("category", "Critical defects")
-@pytest.mark.skip(reason="Skipping this test to demonstrate allure skip category.")
+# @pytest.mark.skip(reason="Skipping this test to demonstrate allure skip category.")
 def test_e2e_testing_alure_skip_category():
     """Test to verify that the allure skip category is working."""
     # This test is intentionally left empty to demonstrate the allure skip category.
